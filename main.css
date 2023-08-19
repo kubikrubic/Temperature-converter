@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(19, 19, 19);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 97vh;
+}
+
+.converter {
+	text-align: center;
+	height: 500px;
+	width: 350px;
+	background-color: rgb(235, 235, 235);
+	border-radius: 16px;
+	border: 2px solid #363636;
+	box-shadow: 0px 0px 65px;
+}
+
+.title {
+	font-size: 2rem;
+	color: #2b2b2b;
+	margin-bottom: 40px;
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+
+
+.text-celsius,
+.text-fahrenheit,
+.text-kelvins {
+	position: absolute;
+	left: 0px;
+	padding: 10px;
+	letter-spacing: 0.5px;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #949494;
+	pointer-events: none;
+	transition: .3s ease;
+	opacity: 1;
+}
+
+.input__feild {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center align the input fields */
+}
+
+.input-feild-celsius,
+.input-feild-fahrenheit,
+.input-feild-kelvins {
+	position: relative;
+	width: 250px;
+	margin-bottom: 25px;
+	
+}
+
+.input-feild-kelvins {
+	margin-bottom: 80px;
+}
+input {
+	background-color: rgb(235, 235, 235);
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid rgb(99, 99, 99);
+	font-size: 1.3rem;
+	transition: .6s;
+	outline: none;
+	letter-spacing: 2.3px;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #020202;
+	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px 30px;
+	border-radius: 9px;
+	border: 1px solid #000000;
+	color: #2b2b2b;
+	letter-spacing: 2px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: #000000;
+	color: #cccccc
+}
+
+.input-box input:focus,
+.input-box input:valid {
+	border: 2px solid #b10101;
+}
+
+
+.input-box input:focus + span,
+.input-box input:valid + span {
+	color: #b10101;
+	transform: translateY(-23px) translateX(10px);
+	font-size: 0.6;
+	background-color: rgb(235, 235, 235);
+}
